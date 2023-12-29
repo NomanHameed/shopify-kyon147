@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->middleware(['verify.shopify'])->name('home');
+// tapday2.noumanengr.com
+Route::group(['domain' => 'tapday.noumanengr.com'], function () {
+    Route::get('/', function () {
+        return view('welcome');
+    })->middleware(['verify.shopify'])->name('home');
+});
+
+Route::group(['domain' => 'tapday2.noumanengr.com'], function () {
+    Route::get('/', function () {
+        dd('testing tapday2');
+    });
+});
