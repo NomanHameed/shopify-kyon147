@@ -12,6 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['domain' => 'tapday2.noumanengr.com'], function () {
+    Route::get('/', function () {
+        dd('testing tapday2');
+    });
+});
+
 
 // tapday2.noumanengr.com
 Route::group(['domain' => 'tapday.noumanengr.com'], function () {
@@ -20,8 +26,3 @@ Route::group(['domain' => 'tapday.noumanengr.com'], function () {
     })->middleware(['verify.shopify'])->name('home');
 });
 
-Route::group(['domain' => 'tapday2.noumanengr.com'], function () {
-    Route::get('/', function () {
-        dd('testing tapday2');
-    });
-});
