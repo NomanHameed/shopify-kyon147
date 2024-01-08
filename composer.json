@@ -7,6 +7,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
+        "gecche/laravel-multidomain": "^4.2",
         "guzzlehttp/guzzle": "^7.0.1",
         "kyon147/laravel-shopify": "^19.2",
         "laravel/framework": "^8.75",
