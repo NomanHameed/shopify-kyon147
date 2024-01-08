@@ -23,6 +23,6 @@ Route::group(['domain' => 'tapday2.noumanengr.com'], function () {
 Route::group(['domain' => 'tapday.noumanengr.com'], function () {
     Route::get('/', function () {
         return view('welcome');
-    })->middleware(['verify.shopify'])->name('home');
+    })->middleware(['verify.shopify'])->name('home1');
 });
 
